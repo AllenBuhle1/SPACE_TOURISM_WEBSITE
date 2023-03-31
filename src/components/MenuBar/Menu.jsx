@@ -7,13 +7,17 @@ import close from "../../assets/shared/close.svg";
 const Menu = () => {
     const [menuOpened,setMenuOpened] = useState(true);
     const [menuIcon,setMenuIcon] = useState(open);
+    const [sideMenuClass,setSideMenuClass] = useState(styles.menuItems+" "+styles.menuItemsDisabled);
     function changeMenuIcon(){
         setMenuOpened(!menuOpened);
+        
         if(menuOpened)
         {
             setMenuIcon(close);
+            setSideMenuClass(styles.menuItems);
         }else{
             setMenuIcon(open);
+            setSideMenuClass(styles.menuItems+" "+styles.menuItemsDisabled)
         }
     }
   return (
@@ -21,10 +25,14 @@ const Menu = () => {
         <div>
             <img src={logo} alt="logo" height="50" width="50"/>
         </div>
-        {/****************************Menu*******************/}
-        <div className={styles.hamBurger} onClick={changeMenuIcon}>
+        {/****************************Menu Mobile*******************/}
+        <div className={styles.hamBurger +" "+styles.mobile} onClick={changeMenuIcon}>
             <img src={menuIcon} alt="Open Menu" width="40" height="40"/>
         </div>
+        <div className={sideMenuClass}>
+
+        </div>
+        
     </div>
   )
 }
