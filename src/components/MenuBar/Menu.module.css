@@ -1,0 +1,30 @@
+@import url(../../styles/reset.css);
+.menu{
+    width: 100vw;
+    height:15vh;
+    padding:24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/**********************************************************
+
+                    Mobile Styling
+
+**********************************************************/
+.hamBurger
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+.hamBurger img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
