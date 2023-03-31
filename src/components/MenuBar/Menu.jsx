@@ -5,7 +5,7 @@ import open from "../../assets/shared/open.svg";
 import close from "../../assets/shared/close.svg";
 
 const Menu = () => {
-    const [menuOpened,setMenuOpened] = useState(false);
+    const [menuOpened,setMenuOpened] = useState(true);
     const [menuIcon,setMenuIcon] = useState(open);
     function changeMenuIcon(){
         setMenuOpened(!menuOpened);
