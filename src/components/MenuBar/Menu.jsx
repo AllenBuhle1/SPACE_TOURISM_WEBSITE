@@ -32,10 +32,26 @@ const Menu = () => {
         </div>
         <div className={sideMenuClass}>
             <ol className={styles.items}>
-                <li><Link to="/" style={{ color: 'inherit', textDecoration: 'inherit'}}>Home</Link></li>
-                <li><Link to="/Destination">Destination</Link></li>
-                <li><Link to="/Crew">Crew</Link></li>
-                <li><Link to="/Technology">Technology</Link></li>
+                <li>
+                    <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit'}} onClick={changeMenuIcon}>
+                        Home
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/Destination" style={{ color: 'inherit', textDecoration: 'inherit'}} onClick={changeMenuIcon}>
+                        Destination
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/Crew" style={{ color: 'inherit', textDecoration: 'inherit'}} onClick={changeMenuIcon}>
+                        Crew
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/Technology" style={{ color: 'inherit', textDecoration: 'inherit'}} onClick={changeMenuIcon}>
+                        Technology
+                    </Link>
+                </li>
             </ol>
         </div>
         

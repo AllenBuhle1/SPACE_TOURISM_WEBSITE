@@ -1,9 +1,9 @@
 import React from 'react';
-//import styles from "./Crew.module.css";
+import styles from "./Crew.module.css";
 
 const Crew = () => {
   return (
-    <div>
+    <div className={styles.page}>
       Crew
     </div>
   )

@@ -13,5 +13,23 @@
     font-size: 16px;
     font-family: 'Barlow Condensed', sans-serif;
 }
-
-/*font-family: 'Bellefair', serif;*/
+h1, h2, h3, h4{
+    font-family: 'Bellefair', serif;
+}
+h1{
+    font-size: 150px;
+}
+h2{
+    font-size: 100px;
+}
+h3{
+    font-size: 56px;
+}
+h4{
+    font-size: 32px;
+}
+h5{
+    font-size: 24px;
+    font-weight: lighter;
+    letter-spacing: 4.75px;
+}

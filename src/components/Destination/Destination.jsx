@@ -1,9 +1,9 @@
 import React from 'react';
-//import styles from "./Destination.module.css";
+import styles from "./Destination.module.css";
 
 const Destination = () => {
   return (
-    <div>
+    <div className={styles.page}>
       Destination
     </div>
   )
