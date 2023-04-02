@@ -32,6 +32,7 @@
 }
 .menuItems
 {
+    padding-top: 20vh;
     position: absolute;
     right: 0;
     top: 0;
@@ -40,6 +41,27 @@
     background-color: rgba(255, 255, 255, .04);
     z-index: 9;
     
+}
+.items
+{
+    list-style-type: none;
+    counter-reset: mItem -1;
+    padding: 0 60px;
+}
+.items li{
+    position: relative;
+    text-transform:uppercase;
+    counter-increment: mItem 1;
+    margin-top: 20px;
+    letter-spacing: 2.7px;
+}
+.items li::before
+{
+    position:absolute;
+    content: "0"counter(mItem);
+    font-size: 16px;
+    left:-30px;
+    font-weight: bold;
 }
 .menuItemsDisabled
 {

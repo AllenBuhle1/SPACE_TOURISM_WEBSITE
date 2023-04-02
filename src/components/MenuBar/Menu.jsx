@@ -30,7 +30,12 @@ const Menu = () => {
             <img src={menuIcon} alt="Open Menu" width="40" height="40"/>
         </div>
         <div className={sideMenuClass}>
-
+            <ol className={styles.items}>
+                <li>Home</li>
+                <li>Destination</li>
+                <li>Crew</li>
+                <li>Technology</li>
+            </ol>
         </div>
         
     </div>
