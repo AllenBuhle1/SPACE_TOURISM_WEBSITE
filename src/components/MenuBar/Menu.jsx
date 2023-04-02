@@ -1,4 +1,5 @@
 import React, {  useState } from 'react'
+import {Link} from "react-router-dom";
 import styles from "./Menu.module.css";
 import logo from "../../assets/shared/logo.svg";
 import open from "../../assets/shared/open.svg";
@@ -21,7 +22,7 @@ const Menu = () => {
         }
     }
   return (
-    <div className={styles.menu}>
+    <nav className={styles.menu}>
         <div>
             <img src={logo} alt="logo" height="50" width="50"/>
         </div>
@@ -31,14 +32,14 @@ const Menu = () => {
         </div>
         <div className={sideMenuClass}>
             <ol className={styles.items}>
-                <li>Home</li>
-                <li>Destination</li>
-                <li>Crew</li>
-                <li>Technology</li>
+                <li><Link to="/" style={{ color: 'inherit', textDecoration: 'inherit'}}>Home</Link></li>
+                <li><Link to="/Destination">Destination</Link></li>
+                <li><Link to="/Crew">Crew</Link></li>
+                <li><Link to="/Technology">Technology</Link></li>
             </ol>
         </div>
         
-    </div>
+    </nav>
   )
 }
 
