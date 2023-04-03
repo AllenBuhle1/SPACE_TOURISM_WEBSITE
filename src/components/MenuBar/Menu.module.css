@@ -1,6 +1,6 @@
 @import url(../../styles/reset.css);
 .menu{
-    position: relative;
+    position: fixed;
     width: 100vw;
     height:15vh;
     padding:24px;

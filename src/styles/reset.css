@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+
 :root{
     --primColor:#0B0D17;
     --secColor:#D0D6F9;
@@ -15,6 +18,7 @@
 }
 h1, h2, h3, h4{
     font-family: 'Bellefair', serif;
+    font-weight: normal;
 }
 h1{
     font-size: 150px;
@@ -29,7 +33,11 @@ h4{
     font-size: 32px;
 }
 h5{
+    position: relative;
     font-size: 24px;
     font-weight: lighter;
     letter-spacing: 4.75px;
+}
+ul{
+    list-style: none;
 }

@@ -5,7 +5,7 @@
     position:absolute;
     left:0;
     top:0;
-    height: 100vh;
+    height: 125vh;
     width: 100vw;
 }
 .content
@@ -19,9 +19,67 @@
 }
 .content p{
     text-align: center;
+    line-height: 25px;
+    font-family: 'Barlow', sans-serif;
+}
+.content .divider
+{
+    width: 100%;
+    height: .5px;
+    background-color: rgba(255, 255, 255, .1);
 }
 h1{
     font-size: 6em;
+}
+.pickDestination
+{
+   margin-left: 30px;
+}
+.pickDestination::before{
+    content: "01";
+    position: absolute;
+    left: -30px;
+    top: 0%;
+    font-weight: bold;
+    color: rgba(255, 255, 255, .3);
+}
+#destNav
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#destNav ul
+{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+}
+#destNav ul .linkActive
+{
+    position: relative;
+}
+#destNav ul .linkActive::before
+{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--white);
+    left: 0;
+    bottom: -5px;
+}
+.travelEst{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.travelEst p{
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: .9em;
 }
 /******************************************************************************
 
@@ -32,4 +90,17 @@ h1{
     background-image: url(../../assets/destination/background-destination-mobile.jpg);
     background-size: cover;
     padding: 20vh 24px 5vh 24px;
+}
+.pickDestination{
+    font-size: 1rem;
+}
+.page img{
+    width: 50vw;
+    height: 50vw;
+    max-width: 445px;
+    max-height: 445px;
+}
+#destNav
+{
+    width: 100%;
 }
