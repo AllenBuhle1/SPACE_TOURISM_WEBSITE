@@ -16,12 +16,65 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    overflow: hidden;
 }
 .content p{
     text-align: center;
+    font-family: 'Bellefair', serif;
+    line-height: 25px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    font-size: .9rem;
 }
 h1{
     font-size: 6em;
+}
+.spaceLaunch
+{
+    margin-left: 30px;
+}
+.spaceLaunch::before{
+    content: "03";
+    position: absolute;
+    left: -30px;
+    top: 0%;
+    font-weight: bold;
+    color: rgba(255, 255, 255, .3);
+}
+
+.content img
+{
+    width:105%;
+}
+.content .description
+{
+    height: 30%;
+}
+.content #terminology
+{
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .6);
+}
+.content nav{
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.content nav span{
+    --len:10vw;
+    width:var(--len);
+    height: var(--len);
+    border: 1px var(--white) solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content nav .radioActive
+{
+    background-color: var(--white);
+    color: var(--primColor);
 }
 /******************************************************************************
 
@@ -31,5 +84,13 @@ h1{
 .page{
     background-image: url(../../assets/technology/background-technology-mobile.jpg);
     background-size: cover;
-    padding: 20vh 24px 5vh 24px;
+    padding: 20vh 0 5vh 0;
+}
+.spaceLaunch
+{
+    font-size: 1rem;
+}
+.content .description
+{
+    padding: 0 24px;
 }

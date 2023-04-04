@@ -89,7 +89,7 @@ h1{
 .page{
     background-image: url(../../assets/destination/background-destination-mobile.jpg);
     background-size: cover;
-    padding: 20vh 24px 5vh 24px;
+    padding: 15vh 24px 5vh 24px;
 }
 .pickDestination{
     font-size: 1rem;
