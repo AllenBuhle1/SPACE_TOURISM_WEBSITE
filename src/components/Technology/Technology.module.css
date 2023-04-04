@@ -18,6 +18,14 @@
     align-items: center;
     overflow: hidden;
 }
+.content .techPic
+{
+    height: 40%;
+    width:105%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .content p{
     text-align: center;
     font-family: 'Bellefair', serif;
@@ -44,7 +52,7 @@ h1{
 
 .content img
 {
-    width:105%;
+    width:100%;
 }
 .content .description
 {

@@ -129,7 +129,9 @@ const Technology = () => {
         <h5 className={styles.spaceLaunch}>
         SPACE LAUNCH 101
         </h5>
-        <img src={pic[1]} alt={`${name}`} srcSet={`${pic[0]} 3x`} />
+        <div className={styles.techPic}>
+          <img src={pic[1]} alt={`${name}`} srcSet={`${pic[0]} 3x`} />
+        </div>
         <nav>
             <span className={classVehicle} onClick={()=>{radioClickHandler(0);}}>1</span>
             <span className={classPort} onClick={()=>{radioClickHandler(1);}}>2</span>
