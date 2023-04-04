@@ -1,18 +1,36 @@
 {
   "files": {
-    "main.css": "/static/css/main.9c7ec97a.css",
-    "main.js": "/static/js/main.87ecbf3e.js",
+    "main.css": "/static/css/main.8a0a72bc.css",
+    "main.js": "/static/js/main.d23cde79.js",
     "static/js/787.e5372b0f.chunk.js": "/static/js/787.e5372b0f.chunk.js",
+    "static/media/image-victor-glover.png": "/static/media/image-victor-glover.8a9a5424588b73ec61c2.png",
+    "static/media/image-anousheh-ansari.png": "/static/media/image-anousheh-ansari.2d647128496ddc638acd.png",
+    "static/media/image-mark-shuttleworth.png": "/static/media/image-mark-shuttleworth.fc30f35b05fc0bc4ee47.png",
+    "static/media/image-douglas-hurley.png": "/static/media/image-douglas-hurley.7540fbb61923064f065e.png",
+    "static/media/image-moon.png": "/static/media/image-moon.d287d07182de3015952f.png",
+    "static/media/image-europa.png": "/static/media/image-europa.3e95f7d0a16fe2ebf4c6.png",
+    "static/media/image-anousheh-ansari.webp": "/static/media/image-anousheh-ansari.bb42b775ee0b12430f3a.webp",
+    "static/media/image-victor-glover.webp": "/static/media/image-victor-glover.1c271f99bab8b06d7ab5.webp",
+    "static/media/image-mars.png": "/static/media/image-mars.1b224c8663251270d79f.png",
+    "static/media/image-douglas-hurley.webp": "/static/media/image-douglas-hurley.e4c7def427824ef543c0.webp",
+    "static/media/image-mark-shuttleworth.webp": "/static/media/image-mark-shuttleworth.665e198adc22fcdf7810.webp",
+    "static/media/image-titan.png": "/static/media/image-titan.d4b078f9ce17e686ae99.png",
+    "static/media/image-europa.webp": "/static/media/image-europa.c3be32383f31d0f76d96.webp",
+    "static/media/image-moon.webp": "/static/media/image-moon.b5a3c90e9c8eeb2cb68d.webp",
+    "static/media/background-home-mobile.jpg": "/static/media/background-home-mobile.13f7adecbcb3c3f170d8.jpg",
+    "static/media/image-mars.webp": "/static/media/image-mars.7f55f721b4a64b7a56a8.webp",
+    "static/media/background-destination-mobile.jpg": "/static/media/background-destination-mobile.e0131e27e751ead1a922.jpg",
+    "static/media/image-titan.webp": "/static/media/image-titan.80738bc61e5d1217a19a.webp",
     "index.html": "/index.html",
     "static/media/logo.svg": "/static/media/logo.565f7f2c0534403f11b71994f4311210.svg",
     "static/media/close.svg": "/static/media/close.d47fda63cbd8b3fedbbc1b2a53f64470.svg",
     "static/media/open.svg": "/static/media/open.5273efa7c50e96ef3e51e7a2b54048ce.svg",
-    "main.9c7ec97a.css.map": "/static/css/main.9c7ec97a.css.map",
-    "main.87ecbf3e.js.map": "/static/js/main.87ecbf3e.js.map",
+    "main.8a0a72bc.css.map": "/static/css/main.8a0a72bc.css.map",
+    "main.d23cde79.js.map": "/static/js/main.d23cde79.js.map",
     "787.e5372b0f.chunk.js.map": "/static/js/787.e5372b0f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c7ec97a.css",
-    "static/js/main.87ecbf3e.js"
+    "static/css/main.8a0a72bc.css",
+    "static/js/main.d23cde79.js"
   ]
 }
