@@ -104,7 +104,7 @@ const Destination = () => {
         <h5 className={styles.pickDestination}>
           PICK YOUR DESTINATION
         </h5>
-        <img src={pic[2]} alt="moon" srcset={`${pic[1]} 3x`} />
+        <img src={pic[1]} alt="moon" srcSet={`${pic[0]} 3x`} />
         <nav id={styles.destNav}>
           <ul>
             <li className={classMoon} onClick={()=>{setClassNames("moon")}}>MOON</li>

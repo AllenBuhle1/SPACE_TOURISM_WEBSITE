@@ -7,6 +7,7 @@
     --primColor:#0B0D17;
     --secColor:#D0D6F9;
     --white:#FFFFFF;
+    --transWhite: rgba(225,225,225,.3);
 }
 *{
     margin:0;
@@ -19,6 +20,7 @@
 h1, h2, h3, h4{
     font-family: 'Bellefair', serif;
     font-weight: normal;
+    text-transform: uppercase;
 }
 h1{
     font-size: 150px;
@@ -37,6 +39,7 @@ h5{
     font-size: 24px;
     font-weight: lighter;
     letter-spacing: 4.75px;
+    text-transform: uppercase;
 }
 ul{
     list-style: none;
