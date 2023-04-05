@@ -8,6 +8,9 @@
     --secColor:#D0D6F9;
     --white:#FFFFFF;
     --transWhite: rgba(225,225,225,.3);
+
+    --tabletMinWidth:760px;
+    --computerMinScreen:960px;
 }
 *{
     margin:0;

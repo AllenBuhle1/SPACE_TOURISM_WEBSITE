@@ -148,7 +148,7 @@ h1{
 
 ******************************************************************************/
 
-@media only screen and (min-width : 760px)
+@media only screen and (min-width : 1130px)
 {
     .page{
         background-image: url(../../assets/destination/background-destination-tablet.jpg);
@@ -183,7 +183,7 @@ h1{
     }
     .content .destCont
     {
-        height: 35vh;
+        height: 90%;
     }
 }
 /******************************************************************************
@@ -192,7 +192,7 @@ h1{
 
 ******************************************************************************/
 
-@media only screen and (min-width : 1452px)
+@media only screen and (min-width : 1130px)
 {
     .page{
         background-image: url(../../assets/destination/background-destination-desktop.jpg);

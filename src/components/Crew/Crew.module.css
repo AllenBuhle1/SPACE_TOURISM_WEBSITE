@@ -205,7 +205,7 @@ h1{
 
 ******************************************************************************/
 
-@media only screen and (min-width : 1452px)
+@media only screen and (min-width : 1130px)
 {
     .page
     {
@@ -229,7 +229,7 @@ h1{
     {
         height: 100%;
         width: 50%;
-        padding: 15% 10vw 5% 0;
+        padding: 5% 10vw 5% 0;
         align-items: flex-start;
     }
     .content .posName
