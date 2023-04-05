@@ -1,11 +1,18 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from "./Technology.module.css";
 import tech from "./Technologies";
 
 const Technology = () => {
 
+  const imgIndex = useRef(0);
+  if(window.innerWidth>=960)
+  {
+    imgIndex.current = 1;
+  }else
+  {
+    imgIndex.current = 0;
+  }
   const numOfTechs = tech.length-1;
-
   const [indexTech,setIndexTech] = useState(0);
   const [pic,setPic] = useState(tech[0].pic);
   const [name,setName] = useState(tech[0].name);
@@ -15,6 +22,31 @@ const Technology = () => {
   const [classPort,setClassPort]= useState('');
   const [classCapsule,setClassCapsule]=useState('');
 
+  //Handle Change of Image from landscape to portrait
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+
+  function getWindowSize() {
+    const {innerWidth, innerHeight} = window;
+    return {innerWidth, innerHeight};
+  }
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
+
+    window.addEventListener('resize', handleWindowResize);
+    if(windowSize.innerWidth >=960)
+    {
+      imgIndex.current = 1;
+      console.log("Imagechange");
+    }else
+    {
+      imgIndex.current = 0;
+    }
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  })
 
   const emptyAllRadioClassName = ()=>{
     setClassVehicle('');
@@ -126,22 +158,30 @@ const Technology = () => {
   return (
     <div className={styles.page}>
       <div className={styles.content} onTouchStart={onTouchStart} onTouchEnd={onTouchEnd} onTouchMove={onTouchMove}>
-        <h5 className={styles.spaceLaunch}>
-        SPACE LAUNCH 101
-        </h5>
-        <div className={styles.techPic}>
-          <img src={pic[1]} alt={`${name}`} srcSet={`${pic[0]} 3x`} />
+        <div className={styles.titleRapper}>
+          <h5 className={styles.spaceLaunch}>
+            SPACE LAUNCH 101
+          </h5>
         </div>
-        <nav>
-            <span className={classVehicle} onClick={()=>{radioClickHandler(0);}}>1</span>
-            <span className={classPort} onClick={()=>{radioClickHandler(1);}}>2</span>
-            <span className={classCapsule} onClick={()=>{radioClickHandler(2);}}>3</span>
-          </nav>
-        <div id={styles.posName}>
-            <p id={styles.terminology}>THE TERMINOLOGY…</p>
-            <h4 id={styles.name}>{name}</h4>
+        <div className={styles.vihicleDetails}>
+          <div className={styles.techPic}>
+            <img src={pic[imgIndex.current]} alt={`${name}`} />
           </div>
-        <p className={styles.description}>{desc}</p>
+          <div className={styles.vehInf}>
+            <nav>
+                <span className={classVehicle} onClick={()=>{radioClickHandler(0);}}>1</span>
+                <span className={classPort} onClick={()=>{radioClickHandler(1);}}>2</span>
+                <span className={classCapsule} onClick={()=>{radioClickHandler(2);}}>3</span>
+            </nav>
+            <div className={styles.spaceVehicleInfo}>
+              <div className={styles.temName}>
+                  <p id={styles.terminology}>THE TERMINOLOGY…</p>
+                  <h4 id={styles.name}>{name}</h4>
+              </div>
+              <p className={styles.description}>{desc}</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
