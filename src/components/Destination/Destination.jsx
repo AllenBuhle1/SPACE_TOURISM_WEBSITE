@@ -101,32 +101,39 @@ const Destination = () => {
   return (
     <div className={styles.page}>
       <div className={styles.content}>
-        <h5 className={styles.pickDestination}>
-          PICK YOUR DESTINATION
-        </h5>
-        <img src={pic[1]} alt="moon" srcSet={`${pic[0]} 3x`} />
-        <nav id={styles.destNav}>
-          <ul>
-            <li className={classMoon} onClick={()=>{setClassNames("moon")}}>MOON</li>
-            <li className={classMars} onClick={()=>{setClassNames("mars")}}>MARS</li>
-            <li className={classEuropa} onClick={()=>{setClassNames("europa")}}>EUROPA</li>
-            <li className={classTitan} onClick={()=>{setClassNames("titan")}}>TITAN</li>
-          </ul>
-        </nav>
-        <h3>{destination}</h3>
-        <p>
-          {description}
-        </p>
-        <span className={styles.divider}>&nbsp;</span>
-        <div className={styles.travelEst}>
-          <p>AVG. DISTANCE</p>
-          <h5>{dist}</h5>
+        <div className={styles.pickDest}>
+          <h5 className={styles.pickDestination}>
+            PICK YOUR DESTINATION
+          </h5>
         </div>
-        <div className={styles.travelEst}>
-          <p>EST. TRAVEL TIME</p>
-          <h5>{trTime}</h5>
+        <div className={styles.planet}>
+          <img src={pic[1]} alt="moon" srcSet={`${pic[0]} 3x`} />
+          <div className={styles.destCont}>
+            <nav id={styles.destNav}>
+              <ul>
+                <li className={classMoon} onClick={()=>{setClassNames("moon")}}>MOON</li>
+                <li className={classMars} onClick={()=>{setClassNames("mars")}}>MARS</li>
+                <li className={classEuropa} onClick={()=>{setClassNames("europa")}}>EUROPA</li>
+                <li className={classTitan} onClick={()=>{setClassNames("titan")}}>TITAN</li>
+              </ul>
+            </nav>
+            <h3>{destination}</h3>
+            <p className={styles.desc}>
+              {description}
+            </p>
+            <span className={styles.divider}>&nbsp;</span>
+            <div className={styles.travEst}>
+              <div className={styles.travelEst}>
+                <p>AVG. DISTANCE</p>
+                <h5>{dist}</h5>
+              </div>
+              <div className={styles.travelEst}>
+                <p>EST. TRAVEL TIME</p>
+                <h5>{trTime}</h5>
+              </div>
+            </div>
+          </div>
         </div>
-
       </div>
     </div>
   )

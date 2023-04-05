@@ -5,8 +5,11 @@
     position:absolute;
     left:0;
     top:0;
-    height: 125vh;
+    height: 130vh;
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .content
 {
@@ -54,6 +57,11 @@ h1{
     display: flex;
     width: 80%;
     justify-content: space-around;
+}
+#destNav ul li:hover
+{
+    cursor: pointer;
+    opacity: 70%;
 }
 #destNav ul .linkActive
 {
@@ -103,4 +111,122 @@ h1{
 #destNav
 {
     width: 100%;
+}
+.content .travEst
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap:4vh;
+}
+.content .pickDest
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content .destCont
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 65vh;
+}
+.content .planet
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 85%;
+}
+/******************************************************************************
+
+                        Tablet Styling
+
+******************************************************************************/
+
+@media only screen and (min-width : 760px)
+{
+    .page{
+        background-image: url(../../assets/destination/background-destination-tablet.jpg);
+        height: 100vh;
+    }
+    .content
+    {
+        width:80%;
+    }
+    .content #destNav
+    {
+        width: 50%;
+    }
+    .content .travEst
+    {
+        flex-direction: row;
+        width:50vw;
+    }
+    .content .destNav
+    {
+        width: 30vw;
+    }
+    .content .pickDest
+    {
+        justify-content: flex-start;
+    }
+
+    .page img{
+        --lenTab:40vw;
+        width: var(--lenTab);
+        height: var(--lenTab);
+    }
+    .content .destCont
+    {
+        height: 35vh;
+    }
+}
+/******************************************************************************
+
+                        Desktop Styling
+
+******************************************************************************/
+
+@media only screen and (min-width : 1452px)
+{
+    .page{
+        background-image: url(../../assets/destination/background-destination-desktop.jpg);
+        height: 100vh;
+    }
+    .content p
+    {
+        text-align: left;
+    }
+    .content #destNav
+    {
+        justify-content: flex-start;
+    }
+    .content #destNav ul
+    {
+        justify-content: flex-start;
+        gap: 2vw;
+    }
+    .content .planet
+    {
+        flex-direction: row;
+    }
+    .content .travEst
+    {
+        width: 100%;
+    }
+    .content .destCont
+    {
+        width: 50%;
+        align-items: flex-start;
+        padding-right: 15vw;
+    }
+    .content .travelEst
+    {
+        align-items: flex-start;
+    }
 }

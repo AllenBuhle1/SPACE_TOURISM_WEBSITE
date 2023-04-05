@@ -40,6 +40,26 @@ h1{
     font-weight: bold;
     color: rgba(255, 255, 255, .3);
 }
+.content .crewPgCont
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .crewCont
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 35vh;
+}
+
+.content .crewCont .des
+{
+    height: 50%;
+}
 .content .crewMemberPic
 {
     display: flex;
@@ -47,7 +67,7 @@ h1{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 40%;
+    height: 30vh;
 }
 .content .crewMemberPic img{
     height: 90%;
@@ -81,10 +101,7 @@ h1{
     text-transform: uppercase;
     color: rgba(255, 255, 255, .6);
 }
-.content .des
-{
-    height: 30%;
-}
+
 /******************************************************************************
 
                           Mobile Styling
@@ -102,4 +119,60 @@ h1{
 .content #name
 {
     font-size: 1.5em;
+}
+.content .meetCrewCont
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/******************************************************************************
+
+                        Tablet Styling
+
+******************************************************************************/
+
+@media only screen and (min-width : 760px)
+{
+    .page{
+        background-image: url(../../assets/crew/background-crew-tablet.jpg);
+        padding: 15vh 24px 0 24px;
+    }
+    .content
+    {
+        justify-content: flex-end;
+    }
+    .content .meetCrewCont
+    {
+        justify-content: flex-start;
+    }
+    .content .crewPgCont
+    {
+        padding: 0 10vw;
+    }
+    .content nav
+    {
+        order: 1;
+        -ms-flex-order: 1;
+    }
+    .content .crewMemberPic
+    {
+        order: 2;
+        -ms-flex-order: 2;
+    }
+}
+
+/******************************************************************************
+
+                        Desktop Styling
+
+******************************************************************************/
+
+@media only screen and (min-width : 1452px)
+{
+    .page
+    {
+        background-image: url(../../assets/crew/background-crew-desktop.jpg);
+    }
 }

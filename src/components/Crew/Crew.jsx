@@ -128,24 +128,30 @@ const Crew = () => {
   return (
     <div className={styles.page}>
       <div className={styles.content} onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}>
-        <h5 className={styles.meetCrew}>
-          MEET YOUR CREW
-        </h5>
-        <div className={styles.crewMemberPic}>
-          <img src={pic[1]} alt={`${name}`} srcSet={`${pic[0]} 3x`} />
-          <span className={styles.crewMemberPicUnderline}>&nbsp;</span>
+        <div className={styles.meetCrewCont}>
+          <h5 className={styles.meetCrew}>
+            MEET YOUR CREW
+          </h5>
         </div>
-        <nav>
-            <span className={classDouglas} onClick={()=>{radioClickHandler(0);}}>&nbsp;</span>
-            <span className={classVictor} onClick={()=>{radioClickHandler(1);}}>&nbsp;</span>
-            <span className={classMark} onClick={()=>{radioClickHandler(2);}}>&nbsp;</span>
-            <span className={classAnsari} onClick={()=>{radioClickHandler(3);}}>&nbsp;</span>
-          </nav>
-          <div id={styles.posName}>
-            <p id={styles.position}>{pos}</p>
-            <h4 id={styles.name}>{name}</h4>
+        <div className={styles.crewPgCont}>
+          <div className={styles.crewMemberPic}>
+            <img src={pic[1]} alt={`${name}`} srcSet={`${pic[0]} 3x`} />
+            <span className={styles.crewMemberPicUnderline}>&nbsp;</span>
           </div>
-          <p className={styles.des}>{desc}</p>
+          <div className={styles.crewCont}>
+            <nav>
+                <span className={classDouglas} onClick={()=>{radioClickHandler(0);}}>&nbsp;</span>
+                <span className={classVictor} onClick={()=>{radioClickHandler(1);}}>&nbsp;</span>
+                <span className={classMark} onClick={()=>{radioClickHandler(2);}}>&nbsp;</span>
+                <span className={classAnsari} onClick={()=>{radioClickHandler(3);}}>&nbsp;</span>
+              </nav>
+              <div id={styles.posName}>
+                <p id={styles.position}>{pos}</p>
+                <h4 id={styles.name}>{name}</h4>
+              </div>
+              <p className={styles.des}>{desc}</p>
+          </div>
+        </div>
       </div>
     </div>
   )

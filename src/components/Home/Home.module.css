@@ -25,24 +25,34 @@ h1{
 }
 .explore
 {
+    --len:40vw;
     position: relative;
-    width: 40vw;
-    height: 40vw;
+    width: var(--len);
+    height: var(--len);
     border-radius: 50%;
-    max-width: 150px;
-    max-height: 150px;
     background-color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--primColor);
     letter-spacing: 1.25px;
-    font-size: 1.3rem;
+    font-size: 2em;
 }
 .explore:hover 
 {
     cursor: pointer;
     box-shadow: 0 0 0 30px rgba(185, 185, 185, .4);
+}
+.content .travel
+{
+    text-align: center;
+}
+.content .homeCont
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 /******************************************************************************
 
@@ -53,4 +63,81 @@ h1{
     background-image: url(../../assets/home/background-home-mobile.jpg);
     background-size: cover;
     padding: 15vh 24px 5vh 24px;
+}
+
+/******************************************************************************
+
+                        Tablet Styling
+
+******************************************************************************/
+@media only screen and (min-width : 460px)
+{    
+    .page 
+    {
+        background-image: url(../../assets/home/background-home-tablet.jpg);
+    } 
+}
+@media only screen and (min-width : 760px)
+{    
+    .page 
+    {
+        padding: 15vh 15vw 10vh 15vw;
+    }
+    .content h1{
+        font-size: 15em;
+    }
+    .explore
+    {
+        --lenTab:30vw;
+        width: var(--lenTab);
+        height: var(--lenTab);
+    }
+}
+
+/******************************************************************************
+
+                        Desktop Styling
+
+******************************************************************************/
+
+@media only screen and (min-width:1452px)
+{
+    .page 
+    {
+        background-image: url(../../assets/home/background-home-desktop.jpg);
+        padding: 15vh 15vw 20vh 15vw;
+    } 
+    .content
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .content .homeCont
+    {
+        width: 30%;
+        height: 70%;
+    }
+    .exploreCont
+    {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .explore
+    {
+        --lenDesk:25vh;
+        width: var(--lenDesk);
+        height: var(--lenDesk);
+    }
+
+    .content h1{
+        font-size: 10em;
+    }
+    .content p
+    {
+        line-height: 32px;
+    }
 }

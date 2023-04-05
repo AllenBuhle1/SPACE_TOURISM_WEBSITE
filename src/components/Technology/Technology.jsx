@@ -6,7 +6,7 @@ const Technology = () => {
 
   const numOfTechs = tech.length-1;
 
-  const [indexTech,setIndexTech] = useState();
+  const [indexTech,setIndexTech] = useState(0);
   const [pic,setPic] = useState(tech[0].pic);
   const [name,setName] = useState(tech[0].name);
   const [desc,setDesc] = useState(tech[0].description);

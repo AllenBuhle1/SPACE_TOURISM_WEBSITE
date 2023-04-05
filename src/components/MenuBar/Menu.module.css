@@ -3,6 +3,7 @@
     position: fixed;
     width: 100vw;
     height:15vh;
+    max-height: 100px;
     padding:24px;
     display: flex;
     justify-content: space-between;
@@ -43,7 +44,7 @@ Link{
     width:75vw;
     height: 100vh;
     background-color: rgba(255, 255, 255, .04);
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(90px);
     z-index: 9;
     
 }
@@ -68,7 +69,92 @@ Link{
     left:-30px;
     font-weight: bold;
 }
+.items li .link{
+    color: inherit;
+    text-decoration:inherit;
+}
 .menuItemsDisabled
 {
     visibility: hidden;
+}
+.items .activeLink
+{
+    visibility: none;
+}
+
+/******************************************************************************
+
+                        Tablet Styling
+
+******************************************************************************/
+
+@media only screen and (min-width : 760px)
+{
+    #mobile
+    {
+        display: none;
+        visibility: hidden;
+    }
+    .menuItems
+    {
+        padding: 0;
+        visibility: visible;
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .items{
+        padding: 0;
+        display: flex;
+        align-items:center;
+        justify-content: space-around;
+        width: 80%;
+        height: 100%;
+    }
+    .items li{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .items .activeLink
+    {
+        visibility: visible;
+        border-bottom: 1px var(--white) solid;
+    }
+    .items li:hover
+    {
+        border-bottom: 1px var(--transWhite) solid;
+    }
+    
+    .items li::before{
+        display: none;
+    }
+    .items li .link{
+        font-size: 16px;
+    }
+    
+}
+
+/**********************************************************************************
+
+                        Desktop Styling
+
+**********************************************************************************/
+@media only screen and (min-width:1452px)
+{
+    .menuItems::before
+    {
+        content: '';
+        width: 40%;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        left:-35%;
+        background-color: var(--white);
+        z-index: 41;
+    }
 }
