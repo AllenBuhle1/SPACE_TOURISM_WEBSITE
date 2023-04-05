@@ -84,6 +84,9 @@ h1{
     justify-content: space-between;
     align-items: center;
 }
+.content nav span:hover{
+    cursor: pointer;
+}
 .content nav span
 {
     --len:10px;
@@ -127,6 +130,15 @@ h1{
     justify-content: center;
     align-items: center;
 }
+.content .posName
+{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 5vw;
+}
 /******************************************************************************
 
                         Tablet Styling
@@ -142,6 +154,7 @@ h1{
     .content
     {
         justify-content: flex-end;
+        padding: 0 3vw;
     }
     .content .meetCrewCont
     {
@@ -149,7 +162,12 @@ h1{
     }
     .content .crewPgCont
     {
-        padding: 0 10vw;
+        height: 95%;
+        padding: 5vh 10vw 0 10vw;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        gap: 5vh;
+        
     }
     .content nav
     {
@@ -158,8 +176,26 @@ h1{
     }
     .content .crewMemberPic
     {
-        order: 2;
-        -ms-flex-order: 2;
+        height: 70%;
+        padding: 0;
+    }
+    .content .crewMemberPic img
+    {
+        margin: 0;
+        height: 100%;
+        
+    }
+    .content .crewCont
+    {
+        height: 30%;
+    }
+    .content .crewMemberPicUnderline
+    {
+        display: none;
+    }
+    .content .posName
+    {
+        transform: scale(1.2);
     }
 }
 
@@ -174,5 +210,45 @@ h1{
     .page
     {
         background-image: url(../../assets/crew/background-crew-desktop.jpg);
+        padding-left: 15vw;
+    }
+    .content .crewPgCont
+    {
+        flex-direction: row-reverse;
+        padding: 0;
+        height: 80%;
+        width: 100%;
+        
+    }
+    .content .crewMemberPic
+    {
+        height: 100%;
+        width: 50%;
+    }
+    .content .crewCont
+    {
+        height: 100%;
+        width: 50%;
+        padding: 15% 10vw 5% 0;
+        align-items: flex-start;
+    }
+    .content .posName
+    {
+        align-items: flex-start;
+        transform: scale(1);
+        padding: 0;
+    }
+    .content #position
+    {
+        text-align: left;
+        font-size: 1.5em;
+    }
+    .content #name{
+        font-size: 2.5em;
+        margin-top: 2vh;
+    }
+    .content .des
+    {
+        text-align: left;
     }
 }

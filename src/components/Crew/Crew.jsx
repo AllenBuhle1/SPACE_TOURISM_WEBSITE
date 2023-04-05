@@ -145,11 +145,13 @@ const Crew = () => {
                 <span className={classMark} onClick={()=>{radioClickHandler(2);}}>&nbsp;</span>
                 <span className={classAnsari} onClick={()=>{radioClickHandler(3);}}>&nbsp;</span>
               </nav>
-              <div id={styles.posName}>
-                <p id={styles.position}>{pos}</p>
-                <h4 id={styles.name}>{name}</h4>
+              <div className={styles.posName}>
+                <div id={styles.posName}>
+                  <p id={styles.position}>{pos}</p>
+                  <h4 id={styles.name}>{name}</h4>
+                </div>
+                <p className={styles.des}>{desc}</p>
               </div>
-              <p className={styles.des}>{desc}</p>
           </div>
         </div>
       </div>
