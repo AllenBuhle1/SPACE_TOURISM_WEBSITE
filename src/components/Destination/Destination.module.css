@@ -209,7 +209,11 @@ h1{
     .content #destNav ul
     {
         justify-content: flex-start;
-        gap: 2vw;
+    }
+
+    .content #destNav ul li
+    {
+        margin-right: 2vw;
     }
     .content .planet
     {
